@@ -33,7 +33,7 @@ int main() {
                 int_8_type_ptr, "0")
     };
 
-    LLVMBuildCall(builder, puts_function, puts_function_args, 1, "i");
+    LLVMBuildCall2(builder, puts_function_type, puts_function, puts_function_args, 1, "i");
     LLVMBuildRet(builder, LLVMConstInt(int_32_type, 0, false));
     // end
 
